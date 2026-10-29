@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ilhabela Itacimirim Villages — Villages a partir de R$ 708.500 | PRIMOR Empreendimentos</title>
+<title>Ilhabela Itacimirim Villages — Villages a partir de R$ 718.500 | PRIMOR Empreendimentos</title>
 <meta name="description" content="Villages com 2 suítes a 900m da Praia da Espera, em Itacimirim, Litoral Norte de Salvador. Clube completo, piscina de raia, área gourmet e segurança 24h. Entrega em 2027. Fale com um consultor.">
 <link rel="canonical" href="https://www.ilhabelaitacimirim.com.br/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Ilhabela Itacimirim Villages — Villages a partir de R$ 708.500">
+<meta property="og:title" content="Ilhabela Itacimirim Villages — Villages a partir de R$ 718.500">
 <meta property="og:description" content="Villages com 2 suítes a 900m da Praia da Espera, em Itacimirim, Litoral Norte de Salvador. Clube completo com piscina de raia, área gourmet, academia e segurança 24h.">
 <meta property="og:image" content="https://www.ilhabelaitacimirim.com.br/hero.jpg">
 <meta property="og:image:width" content="480">
@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://www.ilhabelaitacimirim.com.br/">
 <meta property="og:site_name" content="Ilhabela Itacimirim Villages">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ilhabela Itacimirim Villages — Villages a partir de R$ 708.500">
+<meta name="twitter:title" content="Ilhabela Itacimirim Villages — Villages a partir de R$ 718.500">
 <meta name="twitter:description" content="Villages com 2 suítes a 900m da Praia da Espera, em Itacimirim, Litoral Norte de Salvador.">
 <meta name="twitter:image" content="https://www.ilhabelaitacimirim.com.br/hero.jpg">
 <link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
@@ -44,7 +44,7 @@
   },
   "offers": {
     "@type": "Offer",
-    "price": "708500",
+    "price": "718500",
     "priceCurrency": "BRL",
     "availability": "https://schema.org/InStock"
   }
@@ -208,6 +208,27 @@ body{font-family:'Inter',sans-serif;background:var(--white);color:var(--ink);ove
 .cta-price .pv{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(28px,4vw,40px);color:#fff;margin-bottom:32px;}
 .btn-green{background:var(--green);color:#fff;font-weight:700;font-size:15px;padding:17px 44px;border:none;border-radius:40px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:transform .15s,background .2s;box-shadow:0 8px 30px rgba(6,200,69,.4);text-transform:uppercase;letter-spacing:.03em;}
 .btn-green:hover{background:var(--green-h);transform:translateY(-2px);}
+#primor{background:var(--off);padding:70px 24px;}
+.pr-wrap{max-width:720px;margin:0 auto;text-align:center;}
+.pr-wrap .sec-head{margin-bottom:22px;}
+.pr-legal{font-size:12.5px;color:#7a8a88;line-height:1.7;}
+
+/* ===== QUIZ ===== */
+.qz{position:fixed;inset:0;z-index:600;background:rgba(8,30,28,.78);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .35s;}
+.qz.open{opacity:1;pointer-events:auto;}
+.qz-box{position:relative;width:100%;max-width:440px;background:#fff;border-radius:22px;padding:34px 28px 28px;box-shadow:0 30px 80px rgba(0,0,0,.4);transform:translateY(16px);transition:transform .35s;}
+.qz.open .qz-box{transform:translateY(0);}
+.qz-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:none;background:var(--off);color:var(--ink);font-size:16px;cursor:pointer;}
+.qz-bar{height:5px;background:#e6eeec;border-radius:5px;overflow:hidden;margin:0 40px 22px 0;}
+.qz-bar span{display:block;height:100%;width:0;background:var(--green);transition:width .35s;}
+.qz-step{display:none;}
+.qz-step.active{display:block;animation:cardIn .35s ease forwards;}
+.qz-k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:8px;}
+.qz-step h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;color:var(--teal);line-height:1.3;margin-bottom:18px;}
+.qz-opts{display:flex;flex-direction:column;gap:10px;}
+.qz-opts button{text-align:left;padding:14px 16px;border:1.5px solid #e0e8e6;border-radius:12px;background:var(--off);font-family:inherit;font-size:15px;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s;}
+.qz-opts button:hover{border-color:var(--teal);background:#fff;}
+.qz-back{margin-top:14px;background:none;border:none;color:#8a9896;font-size:13px;cursor:pointer;font-family:inherit;}
 footer{background:var(--teal-deep);padding:36px 24px;text-align:center;}
 footer p{font-size:12px;color:rgba(255,255,255,.5);line-height:1.6;}
 @media(max-width:600px){.sec{padding:70px 20px;}#scrolly{height:440vh;}.gal-grid{grid-template-columns:1fr;}}
@@ -377,9 +398,53 @@ footer p{font-size:12px;color:rgba(255,255,255,.5);line-height:1.6;}
   <img src="logo-full.webp" loading="lazy" width="368" height="267" alt="Ilhabela Itacimirim Villages">
   <h2>Venha para o<br><b>Ilhabela</b></h2>
   <p>Empreendimento de alto padrão, seguro e belíssimo. Pagamento flexível e atendimento direto com um consultor.</p>
-  <div class="cta-price"><div class="pl">Unidades a partir de</div><div class="pv">R$ 708.500</div></div>
+  <div class="cta-price"><div class="pl">Unidades a partir de</div><div class="pv">R$ 718.500</div></div>
   <a href="#hero" class="btn-green">Fale com representante →</a>
 </section>
+
+<section id="primor">
+  <div class="pr-wrap">
+    <div class="sec-head">
+      <div class="tag">Quem constrói</div>
+      <h2>PRIMOR Empreendimentos</h2>
+      <p>Incorporadora baiana com sede em Salvador, responsável pelo Ilhabela Itacimirim Villages do projeto à entrega das chaves. Qualidade construtiva, transparência e atendimento próximo em cada etapa da sua compra.</p>
+    </div>
+    <p class="pr-legal">PRIMOR Construções e Incorporações Imobiliárias Ltda · CNPJ 61.226.104/0001-03<br>Av. Luís Eduardo Magalhães, 3301, Loja B · Salvador/BA</p>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<div class="qz" id="quiz" role="dialog" aria-modal="true" aria-label="Quiz rápido">
+  <div class="qz-box">
+    <button type="button" class="qz-close" aria-label="Fechar" onclick="closeQuiz()">✕</button>
+    <div class="qz-bar"><span id="qzBar"></span></div>
+    <div class="qz-step active" data-key="Objetivo">
+      <p class="qz-k">Pergunta 1 de 3</p>
+      <h3>Qual o seu objetivo com o Ilhabela?</h3>
+      <div class="qz-opts"><button type="button">Morar</button><button type="button">Casa de praia / veraneio</button><button type="button">Investimento</button></div>
+    </div>
+    <div class="qz-step" data-key="Prazo">
+      <p class="qz-k">Pergunta 2 de 3</p>
+      <h3>Quando pretende comprar?</h3>
+      <div class="qz-opts"><button type="button">O quanto antes</button><button type="button">Nos próximos 6 meses</button><button type="button">Daqui a mais de 6 meses</button><button type="button">Só estou pesquisando</button></div>
+      <button type="button" class="qz-back" onclick="qzGo(qzStep-1)">← Voltar</button>
+    </div>
+    <div class="qz-step" data-key="Pagamento">
+      <p class="qz-k">Pergunta 3 de 3</p>
+      <h3>Como prefere pagar?</h3>
+      <div class="qz-opts"><button type="button">À vista</button><button type="button">Entrada + parcelamento</button><button type="button">Financiamento bancário</button><button type="button">Ainda não sei</button></div>
+      <button type="button" class="qz-back" onclick="qzGo(qzStep-1)">← Voltar</button>
+    </div>
+    <form class="qz-step" onsubmit="return submitQuiz(event)">
+      <p class="qz-k">Última etapa</p>
+      <h3>Pronto! Para onde enviamos as condições?</h3>
+      <div class="fg"><label>Nome <i>*</i></label><input type="text" name="nome" placeholder="Nome completo" required></div>
+      <div class="fg"><label>WhatsApp <i>*</i></label><input type="tel" name="whatsapp" placeholder="(71) 9 9999-9999" required></div>
+      <button type="submit" class="form-submit">Receber no WhatsApp →</button>
+      <button type="button" class="qz-back" onclick="qzGo(qzStep-1)">← Voltar</button>
+    </form>
+  </div>
+</div>
 
 <footer><p>2025 © Ilhabela Itacimirim Villages — Todos os direitos reservados<br>PRIMOR Empreendimentos · Desde 2015 com você</p></footer>
 
@@ -485,8 +550,47 @@ document.addEventListener('keydown',function(e){
 function submitLead(e){
   e.preventDefault();var f=e.target,nome=f.nome.value;
   var msg='Olá! Meu nome é '+nome+' e tenho interesse no Ilhabela Itacimirim Villages. Quero falar com um consultor!';
+  qzMark();
   window.open('https://wa.me/5571996192271?text='+encodeURIComponent(msg),'_blank');
   return false;
+}
+
+/* ===== QUIZ ===== */
+var quiz=document.getElementById('quiz'),qzSteps=quiz.querySelectorAll('.qz-step'),qzStep=0,qzAns={};
+function qzSeen(){try{return sessionStorage.getItem('qzDone')==='1';}catch(e){return false;}}
+function qzMark(){try{sessionStorage.setItem('qzDone','1');}catch(e){}}
+function qzGo(i){
+  qzStep=Math.max(0,Math.min(qzSteps.length-1,i));
+  qzSteps.forEach(function(s,si){s.classList.toggle('active',si===qzStep);});
+  document.getElementById('qzBar').style.width=(qzStep/(qzSteps.length-1)*100)+'%';
+}
+function openQuiz(){
+  if(qzSeen()||lb.classList.contains('open'))return;
+  qzMark();quiz.classList.add('open');document.body.style.overflow='hidden';
+}
+function closeQuiz(){quiz.classList.remove('open');document.body.style.overflow='';}
+qzSteps.forEach(function(step,si){
+  step.querySelectorAll('.qz-opts button').forEach(function(b){
+    b.addEventListener('click',function(){qzAns[step.getAttribute('data-key')]=b.textContent;qzGo(si+1);});
+  });
+});
+quiz.addEventListener('click',function(e){if(e.target===quiz)closeQuiz();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&quiz.classList.contains('open'))closeQuiz();});
+function submitQuiz(e){
+  e.preventDefault();var f=e.target;
+  var msg='Olá! Meu nome é '+f.nome.value+' e tenho interesse no Ilhabela Itacimirim Villages.';
+  Object.keys(qzAns).forEach(function(k){msg+='\n• '+k+': '+qzAns[k];});
+  msg+='\nWhatsApp: '+f.whatsapp.value;
+  window.open('https://wa.me/5571996192271?text='+encodeURIComponent(msg),'_blank');
+  closeQuiz();
+  return false;
+}
+/* abre ao chegar na galeria (depois do sobrevoo), uma vez por sessão */
+if('IntersectionObserver' in window){
+  var qzObs=new IntersectionObserver(function(en){
+    if(en[0].isIntersecting){qzObs.disconnect();setTimeout(openQuiz,1500);}
+  },{threshold:.25});
+  qzObs.observe(document.getElementById('lazer'));
 }
 </script>
 </body>
